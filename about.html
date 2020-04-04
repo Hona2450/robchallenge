@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+               </div>
+           
+        <div class="nav-link-wrapper active-nav-link">
+            <a href="about.html">About</a>
+            </div>
+        </div>
+      
+        <div class="right-side">
+            <div class="brand">
+                <div>CHRISTIAN BARAHONA</div>
+           </div>
+       </div>
+   </div>
+
+   <div class="content-wrapper">
+       <div class="two-column-wrapper">
+          <div class="profile-image-wrapper">
+              <img src="images/mepic5.jpg">
+          </div>
+
+          <div class="profile-content-wrapper">
+              <h1>Hi, thanks for visiting my website.</h1>
+
+              <p>My name is Christian Barahona and I am a freshmen that goes to UC Riverside. I am currently in the
+                 pre-business program at UC Riverside that consists of taking all of my pre-requisites and major
+                 requirments so that I could apply to the business school. I'm planning on picking a concentration 
+                 in Business Inforamtion Systems in order to explore the more tech aspects of business especially that
+                 in this day and age tech is vastly improving.</p>
+
+              <p> My plan after college is to work for a big tech company like Google, Facebook, Apple, Amazon,
+                  etc. That's the goal but even if I land at another not too known company or startup company, that 
+                would be fine as well. I would eventually build up expereince so that when I actually go work at one
+                of those big companies that I am prepared to work there. If a great idea for a product came to me 
+                throughout this process and I had the funding and experience for it then I would pursue it and see
+                where I land with it.</p>
+
+              <p> I chose to do this fellowship this summer because I feel that it would give me experience in 
+                    managing a team of individuals in a company and it will also give me a chance to give back
+                    to TXT after everything that it has done for me. TXT led me to believe that I have the potential
+                    to do anything as long as I am willing to put in the work for it and I want to give that mindset
+                    to other young Hispanic and African American kids who need a change in mindset.
+              </p>
+           </div>
+       </div>
+   </div>
+
+   </div>
+
+   <h1>Challenge</h1>
+<p> Type in any number values and hit submit!</p>
+  
+   <input id="first_num" type="text">
+   <input id="second_num" type="text">
+   <input id="third_num" type="text">
+
+   <button id="submit_numbers"> Submit </button> 
+   
+   <body style="background-color:#ffb6c1;">
+
+   <p id="output"></p>
+
+   
+   <script>
+        var submit_numbers_button = document.getElementById("submit_numbers");
+        submit_numbers_button.onclick = function(){
+      nums = [parseInt(document.getElementById("first_num").value), parseInt(document.getElementById("second_num").value), parseInt(document.getElementById("third_num").value)];
+            document.getElementById("output").innerHTML = nums.sort(function(a, b){return a-b});
+
+        }
+    </script>
+</body>
+ </html>
